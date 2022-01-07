@@ -1,6 +1,7 @@
 import 'package:facts_flutter_app/components/home_screen_navbar.dart';
 import 'package:facts_flutter_app/components/list/explore_course_list.dart';
 import 'package:facts_flutter_app/components/list/recent_course_list.dart';
+import 'package:facts_flutter_app/screens/continue_watching_screen.dart';
 import 'package:facts_flutter_app/screens/sidebar_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -85,6 +86,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
           ),
+          ContinueWatchingScreen(),
           IgnorePointer(
             ignoring: sidebarHidden,
             child: Stack(
