@@ -26,7 +26,7 @@ class ContinueWatchingScreen extends StatelessWidget {
             child: Padding(
                 padding: EdgeInsets.only(top: 12, bottom: 16),
                 child: Container(
-                  width: 42,
+                  width: 40,
                   height: 4.0,
                   decoration: BoxDecoration(
                       color: Color(0XFFC5CBD6),
