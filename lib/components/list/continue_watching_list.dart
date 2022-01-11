@@ -47,10 +47,13 @@ class _ContinueWatchingListState extends State<ContinueWatchingList> {
                 });
               },
               controller:
-              PageController(initialPage: 0, viewportFraction: 0.75),
+                  PageController(initialPage: 0, viewportFraction: 0.75),
               itemBuilder: (context, index) {
-                return ContinueWatchingCard(
-                    course: continueWatchingCourses[index]);
+                return Opacity(
+                  opacity: curruntPage == index ? 1.0 : 0.5,
+                  child: ContinueWatchingCard(
+                      course: continueWatchingCourses[index]),
+                );
               }),
         ),
         updateIndicators()

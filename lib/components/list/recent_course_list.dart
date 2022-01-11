@@ -1,4 +1,6 @@
+import 'package:facts_flutter_app/main.dart';
 import 'package:facts_flutter_app/models/course.dart';
+import 'package:facts_flutter_app/screens/course_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../cards/recent_course_card.dart';
@@ -9,6 +11,7 @@ class RecentCourseList extends StatefulWidget {
   @override
   _RecentCourseListState createState() => _RecentCourseListState();
 }
+
 class _RecentCourseListState extends State<RecentCourseList> {
   List<Container> indicator = [];
   int curruntPage = 0;
@@ -25,7 +28,7 @@ class _RecentCourseListState extends State<RecentCourseList> {
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               color:
-              curruntPage == index ? Color(0XFF0971FE) : Color(0XFFA6AEBD)),
+                  curruntPage == index ? Color(0XFF0971FE) : Color(0XFFA6AEBD)),
         );
       }).toList(),
     );
@@ -40,10 +43,18 @@ class _RecentCourseListState extends State<RecentCourseList> {
           child: PageView.builder(
             itemCount: recentCourses.length,
             itemBuilder: (context, index) {
-              return Opacity(
-                opacity: curruntPage == index ? 1.0 : 0.5,
-                child: RecentCourseCard(
-                  course: recentCourses[index],
+              return GestureDetector(
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CourseScreen(course: recentCourses[index],),
+                      fullscreenDialog: true
+                    )),
+                child: Opacity(
+                  opacity: curruntPage == index ? 1.0 : 0.5,
+                  child: RecentCourseCard(
+                    course: recentCourses[index],
+                  ),
                 ),
               );
             },
