@@ -58,32 +58,34 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         color: kBackgroundColor,
         child: Stack(children: [
           SafeArea(
-            child: Column(
-              children: [
-                HomeScreenNavBar(triggerAnimation: () {
-                  setState(() {
-                    sidebarHidden = !sidebarHidden;
-                  });
-                  sidebarAnimationController.forward();
-                }),
-                SizedBox(
-                  height: 20,
-                ),
-                RecentCourseList(),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 25, 20, 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        "Explore",
-                        style: kTitle1Style,
-                      ),
-                    ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  HomeScreenNavBar(triggerAnimation: () {
+                    setState(() {
+                      sidebarHidden = !sidebarHidden;
+                    });
+                    sidebarAnimationController.forward();
+                  }),
+                  SizedBox(
+                    height: 20,
                   ),
-                ),
-                ExploreCourseList(),
-              ],
+                  RecentCourseList(),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 25, 20, 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          "Explore",
+                          style: kTitle1Style,
+                        ),
+                      ],
+                    ),
+                  ),
+                  ExploreCourseList(),
+                ],
+              ),
             ),
           ),
           ContinueWatchingScreen(),

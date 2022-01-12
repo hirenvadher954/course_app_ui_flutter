@@ -35,29 +35,38 @@ class RecentCourseCard extends StatelessWidget {
               children: [
                 Padding(
                   padding:
-                  const EdgeInsets.only(top: 32.0, left: 32.0, right: 32.0),
+                      const EdgeInsets.only(top: 32.0, left: 32.0, right: 32.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        course.courseSubtitle,
-                        style: kCardSubtitleStyle,
+                      Hero(
+                        tag: course.courseSubtitle,
+                        child: Text(
+                          course.courseSubtitle,
+                          style: kCardSubtitleStyle,
+                        ),
                       ),
                       SizedBox(
                         height: 6.0,
                       ),
-                      Text(
-                        course.courseTitle,
-                        style: kCardTitleStyle,
+                      Hero(
+                        tag: course.courseSubtitle,
+                        child: Text(
+                          course.courseTitle,
+                          style: kCardTitleStyle,
+                        ),
                       )
                     ],
                   ),
                 ),
                 Expanded(
-                    child: Image.asset(
-                      'assets/illustrations/${course.illustration}',
-                      fit: BoxFit.cover,
-                    ))
+                    child: Hero(
+                  tag: 'assets/illustrations/${course.illustration}',
+                  child: Image.asset(
+                    'assets/illustrations/${course.illustration}',
+                    fit: BoxFit.cover,
+                  ),
+                ))
               ],
             ),
           ),
@@ -65,7 +74,9 @@ class RecentCourseCard extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(right: 42.0),
           child: Container(
-            child: Image.asset('assets/logos/${course.logo}'),
+            child: Hero(
+                tag: course.logo!,
+                child: Image.asset('assets/logos/${course.logo}')),
             width: 60,
             height: 60,
             padding: EdgeInsets.all(12),
