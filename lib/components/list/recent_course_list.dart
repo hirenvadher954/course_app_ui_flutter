@@ -1,4 +1,3 @@
-import 'package:facts_flutter_app/main.dart';
 import 'package:facts_flutter_app/models/course.dart';
 import 'package:facts_flutter_app/screens/course_screen.dart';
 import 'package:flutter/material.dart';

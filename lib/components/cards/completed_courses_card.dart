@@ -3,40 +3,44 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 
-class ContinueWatchingCard extends StatelessWidget {
-  const ContinueWatchingCard({required this.course});
+class CompletedCoursesCard extends StatelessWidget {
+  CompletedCoursesCard({required this.course});
 
   final Course course;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.topCenter,
       child: Stack(
         alignment: Alignment.topRight,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 20, right: 20),
+            padding: EdgeInsets.only(
+              top: 20.0,
+              right: 20.0,
+            ),
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(41),
                 gradient: course.background,
+                borderRadius: BorderRadius.circular(41.0),
                 boxShadow: [
                   BoxShadow(
-                      color: course.background.colors[0].withOpacity(0.3),
-                      offset: Offset(0, 20),
-                      blurRadius: 20),
+                    color: course.background.colors[0].withOpacity(0.3),
+                    offset: Offset(0, 20),
+                    blurRadius: 20.0,
+                  ),
                   BoxShadow(
-                      color: course.background.colors[1].withOpacity(0.3),
-                      offset: Offset(0, 20),
-                      blurRadius: 20),
+                    color: course.background.colors[1].withOpacity(0.3),
+                    offset: Offset(0, 20),
+                    blurRadius: 20.0,
+                  )
                 ],
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(41.0),
                 child: Container(
-                  height: 140,
-                  width: 260,
+                  height: 140.0,
+                  width: 260.0,
                   child: Stack(
                     children: [
                       Row(
@@ -48,18 +52,18 @@ class ContinueWatchingCard extends StatelessWidget {
                             children: [
                               Image.asset(
                                 'assets/illustrations/${course.illustration}',
-                                fit: BoxFit.fill,
-                                height: 110,
+                                fit: BoxFit.cover,
+                                height: 140,
                               ),
                             ],
                           ),
                         ],
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(32.0),
+                        padding: EdgeInsets.all(32.0),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               course.courseSubtitle,
@@ -71,10 +75,10 @@ class ContinueWatchingCard extends StatelessWidget {
                             Text(
                               course.courseTitle,
                               style: kCardTitleStyle,
-                            )
+                            ),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -83,21 +87,26 @@ class ContinueWatchingCard extends StatelessWidget {
           ),
           Container(
             child: Image.asset('assets/icons/icon-play.png'),
-            width: 60,
-            height: 60,
-            padding: EdgeInsets.only(
-                top: 12.5, bottom: 13.5, left: 20.5, right: 14.5),
+            width: 60.0,
+            height: 60.0,
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(18),
-                boxShadow: [
-                  BoxShadow(
-                    color: kShadowColor,
-                    offset: Offset(0, 4),
-                    blurRadius: 16.0,
-                  ),
-                ]),
-          )
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(16.0),
+              boxShadow: [
+                BoxShadow(
+                  color: kShadowColor,
+                  offset: Offset(0, 4),
+                  blurRadius: 16.0,
+                ),
+              ],
+            ),
+            padding: EdgeInsets.only(
+              top: 12.5,
+              bottom: 13.5,
+              left: 20.5,
+              right: 14.5,
+            ),
+          ),
         ],
       ),
     );
