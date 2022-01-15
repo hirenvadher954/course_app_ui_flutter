@@ -39,7 +39,7 @@ class SidebarScreen extends StatelessWidget {
                       height: 4,
                     ),
                     Text(
-                      "License End on 21 Jan, 2021",
+                      "License End on 15 Jan, 2022",
                       style: kSearchPlaceholderStyle,
                     )
                   ],

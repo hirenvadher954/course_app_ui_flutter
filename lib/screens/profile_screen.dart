@@ -131,7 +131,7 @@ class ProfileScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Sai Kambampati",
+                                "Hiren Vadher",
                                 style: kTitle2Style,
                               ),
                               SizedBox(height: 8.0),
