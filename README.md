@@ -7,17 +7,16 @@
 
 ## Screenshots
 
-![Home Screen]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/home.jpg){ height=50% }
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/home.jpg" width="48" >
 
-![Profile Screen]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/profile_screen.jpg)
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/profile_screen.jpg" width="48">
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/side_menu.jpg" width="48">
 
-![Side Menu]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/side_menu.jpg)
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/bottom_bar.jpg" width="48">
 
-![bottom_bar]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/bottom_bar.jpg)
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_screen.jpg" width="48">
 
-![course_screen]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_screen.jpg)
-
-![course_section]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_section.jpg)
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_section.jpg" width="48">
 
 ## Used Framework & Language
 
