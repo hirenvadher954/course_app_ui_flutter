@@ -1,6 +1,4 @@
 
-# Course App UI
-
 ## Course UI Video
 
 [![Video](https://i9.ytimg.com/vi_webp/-Wrdi0QuhPk/mqdefault.webp?sqp=CKT2kI8G&rs=AOn4CLACjhvu4o69r6tGzP6No_37f8bxnw)](https://youtu.be/-Wrdi0QuhPk)
@@ -18,6 +16,7 @@
 
 <img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_section.jpg" width="300">
 </p>
+
 ## Used Framework & Language
 
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) 
