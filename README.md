@@ -7,7 +7,7 @@
 
 ## Screenshots
 
-![Home Screen]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/home.jpg)
+![Home Screen]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/home.jpg){ height=50% }
 
 ![Profile Screen]( https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/profile_screen.jpg)
 
