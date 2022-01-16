@@ -9,12 +9,12 @@
 <p float="left">
 <img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/home.jpg" width="300" >
 
-<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/profile_screen.jpg" width="48">
-<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/side_menu.jpg" width="48">
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/profile_screen.jpg" width="300">
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/side_menu.jpg" width="300">
 
-<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/bottom_bar.jpg" width="48">
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/bottom_bar.jpg" width="300">
 
-<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_screen.jpg" width="48">
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_screen.jpg" width="300">
 
 <img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_section.jpg" width="48">
 </p>
