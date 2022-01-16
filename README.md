@@ -16,7 +16,7 @@
 
 <img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_screen.jpg" width="300">
 
-<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_section.jpg" width="48">
+<img src="https://raw.githubusercontent.com/hirenvadher954/course_app_ui_flutter/master/screenshots/course_section.jpg" width="300">
 </p>
 ## Used Framework & Language
 
